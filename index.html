@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Grade Calculator</h1>
+            <p>Learn JavaScript fundamentals while calculating your grades!</p>
+        </header>
+
+        <main>
+            <!-- Part 1: Variables and Conditionals Section -->
+            <section class="card">
+                <h2>Grade Input</h2>
+                <div class="input-group">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" placeholder="Enter your name">
+                </div>
+                
+                <div class="input-group">
+                    <label for="gradeInput">Enter Grade (0-100):</label>
+                    <input type="number" id="gradeInput" min="0" max="100" placeholder="85">
+                </div>
+                
+                <button id="addGradeBtn">Add Grade</button>
+                <button id="calculateBtn">Calculate Final Grade</button>
+            </section>
+
+            <!-- Part 4: DOM Interactions Display -->
+            <section class="card">
+                <h2>Grade Results</h2>
+                <div id="gradesList"></div>
+                <div id="results"></div>
+                <div id="letterGrade"></div>
+            </section>
+
+            <!-- Part 3: Loops Demonstration -->
+            <section class="card">
+                <h2>Grade History</h2>
+                <button id="showHistoryBtn">Show All Grades</button>
+                <button id="clearHistoryBtn">Clear History</button>
+                <div id="gradeHistory"></div>
+            </section>
+
+            <!-- Interactive Demo Section -->
+            <section class="card">
+                <h2>Interactive Demo</h2>
+                <button id="demoBtn">Run Demo</button>
+                <div id="demoOutput"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
